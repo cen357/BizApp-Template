@@ -1,0 +1,14 @@
+{
+    "header": [
+        ["STT", "Họ và tên", "Lương"]
+    ],
+    "data": [{
+        "STT": 1,
+        "Họ và tên": "Khanh",
+        "Lương": 0
+    }, {
+        "STT": 2,
+        "Họ và tên": "Ngân",
+        "Lương": 1
+    }]
+}
