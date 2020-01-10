@@ -33,14 +33,14 @@ $(document).ready(function () {
                         visible: $(this).val() === 'selected'
                     },
                     {
-                        field: 'STT',
-                        title: 'STT'
+                        field: 'id',
+                        title: 'ID'
                     }, {
-                        field: 'Họ và tên',
-                        title: 'Họ và tên'
+                        field: 'name',
+                        title: 'Full Name'
                     }, {
-                        field: 'Lương',
-                        title: 'Lương'
+                        field: 'salary',
+                        title: 'Salary'
                     }
                 ]
             });
@@ -128,7 +128,7 @@ $(document).ready(function () {
         for (let index = selectedIndex; index <= counter; index++) {
             $table.bootstrapTable('updateCellByUniqueId', {
                 id: index + 1,
-                field: 'STT',
+                field: 'id',
                 value: index
             });
         }
