@@ -11,7 +11,7 @@ function getIdSelection($dataTable) {
     if (selected.length === 0) {
         return -1;
     }
-    return selected[0]['id'];
+    return selected[0]['ID'];
 }
 
 /** Function description: 
@@ -102,10 +102,10 @@ function getDataFromLocalStorage(dataKey) {
  */
 function calcRowData(row) {
     let data = {
-        'id': row['id'],
-        'name': row['name'],
-        'salary': row['salary'],
-        'tax': (row['salary'] * 15) / 100
+        'ID': row['ID'],
+        'Full Name': row['Full Name'],
+        'Salary': row['Salary'],
+        'Tax': (row['Salary'] * 15) / 100
     };
     return data;
 }
@@ -137,15 +137,15 @@ function calcSumRow(data) {
     let taxSum = 0;
 
     data.forEach(element => {
-        salarySum += Number(element['salary']);
-        taxSum += Number(element['tax']);
+        salarySum += Number(element['Salary']);
+        taxSum += Number(element['Tax']);
     });
 
     let sumRow = {
-        'id': '',
-        'name': 'Sum',
-        'salary': salarySum,
-        'tax': taxSum
+        'ID': '',
+        'Full Name': 'Sum',
+        'Salary': salarySum,
+        'Tax': taxSum
     };
 
     return sumRow;
