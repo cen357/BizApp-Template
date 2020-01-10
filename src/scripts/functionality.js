@@ -4,14 +4,14 @@ $(document).ready(function () {
 
     // Initialize salary profile data for worksheet
     var profileData = [{
-            "id": 1,
-            "name": "Anthony",
-            "salary": 100
+            "ID": 1,
+            "Full Name": "Anthony",
+            "Salary": 100
         },
         {
-            "id": 2,
-            "name": 'Jane',
-            "salary": 50
+            "ID": 2,
+            "Full Name": 'Jane',
+            "Salary": 50
         }
     ];
 
@@ -33,13 +33,13 @@ $(document).ready(function () {
                         visible: $(this).val() === 'selected'
                     },
                     {
-                        field: 'id',
+                        field: 'ID',
                         title: 'ID'
                     }, {
-                        field: 'name',
+                        field: 'Full Name',
                         title: 'Full Name'
                     }, {
-                        field: 'salary',
+                        field: 'Salary',
                         title: 'Salary'
                     }
                 ]
@@ -75,9 +75,9 @@ $(document).ready(function () {
         $table.bootstrapTable('insertRow', {
             index: counter,
             row: {
-                "id": ++counter,
-                "name": $('#add_name').val(),
-                "salary": $('#add_salary').val()
+                "ID": ++counter,
+                "Full Name": $('#add_name').val(),
+                "Salary": $('#add_salary').val()
             }
         });
 
@@ -101,8 +101,8 @@ $(document).ready(function () {
         $table.bootstrapTable('updateRow', {
             index: selectedIndex - 1,
             row: {
-                "name": $('#edit_name').val(),
-                "salary": $('#edit_salary').val()
+                "Full Name": $('#edit_name').val(),
+                "Salary": $('#edit_salary').val()
             }
         });
 
@@ -128,7 +128,7 @@ $(document).ready(function () {
         for (let index = selectedIndex; index <= counter; index++) {
             $table.bootstrapTable('updateCellByUniqueId', {
                 id: index + 1,
-                field: 'id',
+                field: 'ID',
                 value: index
             });
         }
