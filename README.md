@@ -1,14 +1,15 @@
 # BizApp-Template
 
 ## Description
-This is a front end data table template used for creating and developing complex business applications. 
-Basic functions include: 
-  - Data table
-  - Add, Edit, Delete Row
+A web application using Jquery and Bootstrap that automate repetitive office tasks for small Vietnamese companies. Designed as a front-end app that store employee information using Bootstrap-Table, uses JSON for generating data table based on business logic. This a template that can be customized and used to develop more complex apps with implemented business logic. Planning to upgrade this project using React in the future.
+
+## Functionalities: 
+  - Employee information data table
+  - Add, Edit, Delete Row/Profile
   - Download table (JSON, PDF, CSV,...) 
   - Upload table (JSON File)
   - Multipage data transfer
-  - Customizable calculation applications
+  - Generate data table with implemented business logic.
 
 ## Plugins, libraries and 3rd Party APIs
 1. [BootStrap v4.3.1](https://getbootstrap.com/) for visual looks and functionality
